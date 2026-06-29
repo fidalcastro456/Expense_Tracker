@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Google Sans", sans-serifs;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+}
+.title{
+    padding: 10px;
+}
+.total{
+    padding: 10px;
+}
+.Field{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 125px;
+    border: 1px solid grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+}
+.inputField{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+.buttonField{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 100%;
+}
+.buttonField button{
+    color: green;
+    width: 20%;
+    height: 100%;
+    border: 1px solid gray;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttonField button:hover{
+    filter: drop-shadow(0 0 3px green);
+}
+.expenses{
+    font-size: 0.8em;
+    padding: 10px;
+    width: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid grey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100px;
+}
+.elements{
+    width: 100%;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.nameElement{
+    height: 100%;
+    width: 100px;
+    text-align: left;
+    overflow-x: auto;
+    border-right: 1px solid black;
+}
+.amountElement{
+    height: 100%;
+    overflow-x: auto;
+    text-align: left;
+    width: 65px;
+    border-right: 1px solid black;
+}
+.elements button{
+    color: red;
+    height: 100%;
+    width: 100%px;
+    border: none;
+    background-color: transparent;
+}
+.elements button:hover{
+    filter: drop-shadow(0 0 3px red);
+}
